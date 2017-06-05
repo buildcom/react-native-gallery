@@ -109,13 +109,22 @@ export default class Gallery extends Component {
 
     this.imageResponder = {
       onStart: ((evt, gestureState) => {
-        this.getCurrentImageTransformer().onResponderGrant(evt, gestureState);
+        const currentTransformer = this.getCurrentImageTransformer();
+        if (currentTransformer) {
+            currentTransformer.onResponderGrant(evt, gestureState);
+        }
       }),
       onMove: (evt, gestureState) => {
-        this.getCurrentImageTransformer().onResponderMove(evt, gestureState);
+        const currentTransformer = this.getCurrentImageTransformer();
+        if (currentTransformer) {
+            currentTransformer.onResponderMove(evt, gestureState);
+        }
       },
       onEnd: (evt, gestureState) => {
-        this.getCurrentImageTransformer().onResponderRelease(evt, gestureState);
+        const currentTransformer = this.getCurrentImageTransformer();
+        if (currentTransformer) {
+            currentTransformer.onResponderRelease(evt, gestureState);
+        }
       }
     }
   }
