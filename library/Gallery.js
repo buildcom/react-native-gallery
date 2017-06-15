@@ -134,6 +134,9 @@ export default class Gallery extends Component {
       return false;
     }
     const viewTransformer = this.getCurrentImageTransformer();
+    if (!viewTransformer) {
+      return false;
+    }
     const space = viewTransformer.getAvailableTranslateSpace();
     const dx = gestureState.moveX - gestureState.previousMoveX;
 
