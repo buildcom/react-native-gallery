@@ -1,6 +1,6 @@
 {
   "name": "react-native-gallery",
-  "version": "0.0.26",
+  "version": "0.1.0",
   "description": "",
   "main": "library/Gallery.js",
   "scripts": {
@@ -17,8 +17,8 @@
   },
   "homepage": "https://github.com/buildcom/react-native-gallery#readme",
   "dependencies": {
-    "react-native-transformable-image": "buildcom/react-native-transformable-image#v0.0.20",
-    "@buildcom/react-native-view-pager": "buildcom/react-native-view-pager#v0.1.3",
-    "react-native-gesture-responder": "buildcom/react-native-gesture-responder#v0.2.0"
+    "@buildcom/react-native-view-pager": "buildcom/react-native-view-pager#v0.2.0",
+    "react-native-gesture-responder": "buildcom/react-native-gesture-responder#v0.2.0",
+    "react-native-transformable-image": "buildcom/react-native-transformable-image#v0.0.20"
   }
 }
